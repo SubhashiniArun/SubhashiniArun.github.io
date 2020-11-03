@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+    font-family: "Avenir";
+    font-size: 1rem;
+    background: #fff;
+}
+
+header {
+    background: #000000;
+}
+
+.btn {
+    background: #507C49;
+    border-color: #406C39;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #608C59;
+    border-color: #406C39;
+    color: #fff;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.card {
+padding-top:290px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+.card-body{
+padding-top:-500px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+#navbarHome,#navbarDropdown {
+color:white;
+}
+.dropdown-menu{
+margin-left:100px;
+}
+
+.dropdown-item{
+font-size:12px;
+}
+#line1, #line2{
+font-size:15px;
+</style>
+</head>
+
+
+
+    <header>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+   
+    <ul class="navbar-nav">
+		
+		<a class="active" onclick='go_home()' id="navbarHome" style="width:100px;">Home</a>
+		
+		<a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span> <i class="fa fa-github" style="margin-left:20px;"></i> My Projects</span><span> </span></a>								
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a style="width:200px;" href="https://SubhashiniArun.github.io/React-App-GetEmployeeDetails/"  target="_blank" class="dropdown-item" >Single page React App</a></li>                        
+                        <li><a style="width:200px;" href="https://github.com/SubhashiniArun/No-To-Hunger-Client" target="_blank" class="dropdown-item" >No To Hunger - Angular UI</a></li>
+						<li><a style="width:200px;" href="https://github.com/SubhashiniArun/Simple-Api-creation-"  target="_blank" class="dropdown-item">Post request to Api</a></li>                        
+                        <li><a style="width:200px;" href="https://github.com/SubhashiniArun/TrackingObjects-ComputerVision"  target="_blank" class="dropdown-item">Tracking Motion objects</a></li>
+			   </div>
+        <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span> <i style="margin-left:20px;" class="fa fa-linkedin"></i> LinkedIn </span><span> </span></a>								
+
+		
+     </ul>       
+    </nav>
+              
+    </header>
+	<body>
+	<div class="container-fluid">
+        <div id='welcome' class="jumbotron"></div>
+            <div class="card">
+		        <p> My Undergraduate Life:</p>
+				<p> My Graduate Life:</p>
+            </div> 
+        </div>
+    </div>		
+	<p id="line1"></p>
+	<p id="line2"></p>
+    <div id='footer'>    </div>
+	<script src='lib.js'></script>
+	<script>
+	function onClick(){
+	var txt1, txt2;
+	txt1 = "Phone: 267-449-8625" 
+	txt2 = "Email: subhashini258@gmail.com"	
+	document.getElementById("line1").innerHTML = txt1;
+	document.getElementById("line2").innerHTML = txt2;
+	}
+	</script>
+    </body>
+
+</html>
