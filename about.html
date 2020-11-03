@@ -63,7 +63,8 @@ button {
   font-size: 18px;
 }
 .card-body{
-padding-top:50px;
+padding-top:30px;
+padding-bottom:30px;
 }
 
 a {
@@ -86,6 +87,10 @@ font-size:15px;}
 
 .hobby-list{
 text-align:left;
+}
+
+.hobby-item{
+font-size: 13px;
 }
 
 </style>
@@ -117,32 +122,23 @@ text-align:left;
               
     </header>
 	<body>	
-        <div class="card">
+        <div class="jumbotron card">
 			<div class="card-body">
 		        <h4 style="text-align:left;">Hobbies:</h4>
 				    <ul class="hobby-list">
-				        <li>Travel</li>
-						<li>Cooking</li>
-						<li>Sports - Tennis, Volley ball</li>
+				        <li class="hobby-item">Travel</li>
+						<li class="hobby-item">Cooking</li>
+						<li class="hobby-item">Sports - Tennis, Volley ball</li>
 				    <ul>								
 							
 			</div>
             
         </div> 
        	
-	<p id="line1"></p>
-	<p id="line2"></p>
+	
     <div id='footer'>    </div>
 	<script src='lib.js'></script>
-	<script>
-	function onClick(){
-	var txt1, txt2;
-	txt1 = "Phone: 267-449-8625" 
-	txt2 = "Email: subhashini258@gmail.com"	
-	document.getElementById("line1").innerHTML = txt1;
-	document.getElementById("line2").innerHTML = txt2;
-	}
-	</script>
+	
     </body>
 
 </html>
