@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+    font-family: "Avenir";
+    font-size: 1rem;
+    background: #fff;
+}
+
+header {
+    background: #000000;
+}
+
+.btn {
+    background: #507C49;
+    border-color: #406C39;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #608C59;
+    border-color: #406C39;
+    color: #fff;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.card {
+padding-top:290px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+.card-body{
+padding-top:-500px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+#navbarHome,#navbarDropdown {
+color:white;
+}
+.dropdown-menu{
+margin-left:350px;
+}
+
+.dropdown-item{
+font-size:12px;
+}
+</style>
+</head>
+
+
+
+    <header>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="/"></a>   
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <ul class="navbar-nav">
+		
+		<a class="active" href="/" id="navbarHome" style="width:100px;">Home</a>
+		
+		<a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>My Projects</span><span> </span></a>								
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a style="width:200px;" href="https://github.com/SubhaArun-N?tab=repositories" class="dropdown-item" >No To Hunger</a></li>
+                        <li><a style="width:200px;" href="https://github.com/SubhaArun-N?tab=repositories"  class="dropdown-item" >No To Hunger</a></li>                        
+                </div>
+        
+		
+     </ul>       
+    </nav>
+              
+    </header>
+	<body>
+    <div class="card">
+		<div class="card-body">
+                  <img style="width:300px;height:300px;margin-top:-150px;" src="./images/photo.jpg" alt="Subha" >
+                  <h3>Subhashini Arunachalam</h3>
+                  <p class="title">Computer Science Graduate Student</p>
+                  <p style="text-align:center;font-size:18px;">Drexel University</p>
+                   <div style="margin: 24px 0;">
+                        <a href="https://github.com/SubhashiniArun?tab=repositories" target="_blank"><i class="fa fa-github"></i></a> 
+    
+                         <a href="https://www.linkedin.com/in/subhashiniarunachalam/" target="_blank"><i style="margin-left:25px;" class="fa fa-linkedin"></i></a>  
+    
+                    </div>
+                    <p><button (click)="onClick()">Contact</button></p>
+         </div>
+    <div>   
+    <div id='footer'>    </div>
+    </body>
+
+</html>
