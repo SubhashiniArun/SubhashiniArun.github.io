@@ -78,12 +78,14 @@ a {
 color:white;
 }
 .dropdown-menu{
-margin-left:350px;
+margin-left:100px;
 }
 
 .dropdown-item{
 font-size:12px;
 }
+#line1, #line2{
+font-size:15px;
 </style>
 </head>
 
@@ -91,22 +93,20 @@ font-size:12px;
 
     <header>
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="/"></a>   
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <ul class="navbar-nav">
+   
+    <ul class="navbar-nav">
 		
 		<a class="active" href="/" id="navbarHome" style="width:100px;">Home</a>
 		
-		<a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>My Projects</span><span> </span></a>								
+		<a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span> <i class="fa fa-github" style="margin-left:20px;"></i> My Projects</span><span> </span></a>								
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a style="width:200px;" href="https://SubhashiniArun.github.io/React-App-GetEmployeeDetails/"  target="_blank" class="dropdown-item" >Single page React App</a></li>                        
                         <li><a style="width:200px;" href="https://github.com/SubhashiniArun/No-To-Hunger-Client" target="_blank" class="dropdown-item" >No To Hunger - Angular UI</a></li>
-                        <li><a style="width:200px;" href="https://github.com/SubhashiniArun/React-App-GetEmployeeDetails"  target="_blank" class="dropdown-item" >Single page React App</a></li>                        
-                        <li><a style="width:200px;" href="https://github.com/SubhashiniArun/Simple-Api-creation-"  target="_blank" class="dropdown-item">Post request to Api</a></li>                        
+						<li><a style="width:200px;" href="https://github.com/SubhashiniArun/Simple-Api-creation-"  target="_blank" class="dropdown-item">Post request to Api</a></li>                        
                         <li><a style="width:200px;" href="https://github.com/SubhashiniArun/TrackingObjects-ComputerVision"  target="_blank" class="dropdown-item">Tracking Motion objects</a></li>
 			   </div>
-        
+        <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span> <i style="margin-left:20px;" class="fa fa-linkedin"></i> LinkedIn </span><span> </span></a>								
+
 		
      </ul>       
     </nav>
@@ -119,16 +119,27 @@ font-size:12px;
                   <h3>Subhashini Arunachalam</h3>
                   <p class="title">Computer Science Graduate Student</p>
                   <p style="text-align:center;font-size:18px;">Drexel University</p>
-                   <div style="margin: 24px 0;">
+                  <!-- <div style="margin: 24px 0;">
                         <a href="https://github.com/SubhashiniArun?tab=repositories" target="_blank"><i class="fa fa-github"></i></a> 
     
                          <a href="https://www.linkedin.com/in/subhashiniarunachalam/" target="_blank"><i style="margin-left:25px;" class="fa fa-linkedin"></i></a>  
     
-                    </div>
-                    <p><button (click)="onClick()">Contact</button></p>
+                    </div> -->
+                    <button onclick="onClick()">Contact Details</button>					
          </div>
     <div>   
+	<p id="line1"></p>
+	<p id="line2"></p>
     <div id='footer'>    </div>
+	<script>
+	function onClick(){
+	var txt1, txt2;
+	txt1 = "Phone: 267-449-8625" 
+	txt2 = "Email: subhashini258@gmail.com"	
+	document.getElementById("line1").innerHTML = txt1;
+	document.getElementById("line2").innerHTML = txt2;
+	}
+	</script>
     </body>
 
 </html>
