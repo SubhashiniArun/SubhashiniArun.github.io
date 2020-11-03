@@ -74,7 +74,7 @@ a {
   font-size: 18px;
   color: black;
 }
-#navbarHome,#navbarDropdown {
+#navbarHome,#navbarDropdown, #linkedin-item, #about-item {
 color:white;
 }
 .dropdown-menu{
@@ -85,7 +85,11 @@ margin-left:100px;
 font-size:12px;
 }
 #line1, #line2{
-font-size:15px;
+font-size:15px;}
+
+.hobby-list{
+text-align:left;
+}
 </style>
 </head>
 
@@ -96,7 +100,7 @@ font-size:15px;
    
     <ul class="navbar-nav">
 		
-		<a class="active" href="/" id="navbarHome" style="width:100px;">Home</a>
+		<a class="active" onclick='go_home()' id="navbarHome" style="width:100px;">Home</a>
 		
 		<a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span> <i class="fa fa-github" style="margin-left:20px;"></i> My Projects</span><span> </span></a>								
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -104,11 +108,11 @@ font-size:15px;
                         <li><a style="width:200px;" href="https://github.com/SubhashiniArun/No-To-Hunger-Client" target="_blank" class="dropdown-item" >No To Hunger - Angular UI</a></li>
 						<li><a style="width:200px;" href="https://github.com/SubhashiniArun/Simple-Api-creation-"  target="_blank" class="dropdown-item">Post request to Api</a></li>                        
                         <li><a style="width:200px;" href="https://github.com/SubhashiniArun/TrackingObjects-ComputerVision"  target="_blank" class="dropdown-item">Tracking Motion objects</a></li>
-			   </div>
-        <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span> <i style="margin-left:20px;" class="fa fa-linkedin"></i> LinkedIn </span><span> </span></a>								
+			   </div>		
+     </ul>   
+        <a id="linkedin-item" href="https://www.linkedin.com/in/subhashiniarunachalam/" target="_blank"><span> <i style="margin-left:20px;" class="fa fa-linkedin"></i> LinkedIn </span><span> </span></a>								
+	    <a id="about-item" onclick='about_page()'><span style="margin-left:20px;"> About Me </span><span> </span></a>								
 
-		
-     </ul>       
     </nav>
               
     </header>
@@ -131,6 +135,7 @@ font-size:15px;
 	<p id="line1"></p>
 	<p id="line2"></p>
     <div id='footer'>    </div>
+	<script src='lib.js'></script>
 	<script>
 	function onClick(){
 	var txt1, txt2;
